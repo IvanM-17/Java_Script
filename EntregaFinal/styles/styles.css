@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #a0c4ff, #bde0fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.buscador {
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {    
+
+  background-color: #005bcc;
+}
+
+#resultado {
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+.favoritos {
+  background: #eef5ff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 25px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+}
+
+#listaFavoritos {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#listaFavoritos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border: 1px solid #cfe0ff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s;
+}
+
+#listaFavoritos li:hover {
+  background-color: #e6f0ff;
+}
+
+.btnEliminar {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #ff5c5c;
+  transition: transform 0.2s;
+}
+
+.btnEliminar:hover {
+  transform: scale(1.2);
+}

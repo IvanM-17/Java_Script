@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador Clima - Provincias de Argentina</title>
+
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Simulador de Clima</h1>
+
+        <div class="buscador">
+            <label for="selectProvincia" style="display:block; margin-bottom:8px;">
+                Simulador Local de Provincias Argentinas
+            </label>
+            <select id="selectProvincia">
+                <option value="">Seleccione una provincia</option>
+            </select>
+            <button id="btnBuscar">Buscar provincia de Argentina</button>      
+        </div>
+
+        <div id="resultado"></div>
+        <canvas id="graficoTemperatura"></canvas>        
+        <div class="favoritos">
+            <h3>Provincias Guardadas</h3>
+            <ul id="listaFavoritos"></ul>
+        </div>
+    </div>
+
+  <script src="./java/app.js"></script>
+</body>
+</html>
